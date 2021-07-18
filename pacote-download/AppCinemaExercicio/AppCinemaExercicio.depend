@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1626621895 source:c:\users\windows\documents\curso programa c++\cursolinguagemcpp\pacote-download\appcinemaexercicio\main.cpp
+	<iostream>
+	<locale.h>
+	<time.h>
+

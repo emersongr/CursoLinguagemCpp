@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+pacote-download/cinema/cinema.layout
+pacote-download/cinema/cinema.depend
+pacote-download/cinema/cinema.cbp
+pacote-download/cinema/.vscode/launch.json
