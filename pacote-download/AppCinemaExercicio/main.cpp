@@ -19,6 +19,48 @@ int main()
     cout <<"===================== CINEMA =====================" << endl;
     cout <<"HORÁRIO DO FILME: "<< inicio <<"h - PREÇO DO INGRESSO: R$" << preco << endl;
     cout <<"--------------------------------------------------"<< endl;
-    cout <<"Hora atual: " << h << endl;
-    return 0;
+    cout <<"Hora atual: " << h << "h" << endl;
+    //Entrada de dados
+    float din;
+    cout << "Quanto de dinheiro você tem? R$";
+    cin >> din;
+    //Verificação
+    if (h<inicio && din>=preco) {
+        cout << "Você consegue comprar o ingresso. Seja bem-vindo(a)!" << endl;
+        system("pause");
+    char b[10]={0,0,0,0,0,0,0,0,0,0};
+    char r;
+    int cad;
+    int i;
+    do{
+        system("cls");
+        cout << "Vamos reservar os acentos:" << endl;
+        cout << "--------------------------" << endl;
+        for(i=1; i<10; i++){
+        if(b[i]==0){
+            cout << "[B" << i << "]";
+        }else{
+            cout << "[--]";
+        }
+    }
+    cout << endl;
+    cout << "------------------------------------" << endl;
+    cout << "Reservar a cadeira: B";
+    cin >> cad;
+        if(b[cad]==0){
+            b[cad]=1;
+            cout << "Cadeira B" << cad << " reservada" << endl;
+        }else{
+            cout << "Erro: Lugar reservado!";
+        }
+        cout << endl;
+        cout << "Quer reservar outro? [s/n] ";
+        cin >> r;
+        if (r=='n') {
+            cout << "Obrigado. Volte sempre!";
+        }
+    }while (r=='s');
+   } else {
+      cout << "Infelizmente não é possivel comprar o ingresso! Volte outro dia!" << endl;
+   }
 }
